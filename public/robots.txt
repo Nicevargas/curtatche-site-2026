@@ -1,0 +1,5 @@
+# https://curtatche.com.br
+User-agent: *
+Allow: /
+
+Sitemap: https://curtatche.com.br/sitemap.xml

@@ -1,0 +1,26 @@
+# Dependências
+node_modules/
+
+# Build
+dist/
+.vercel/
+
+# Ambiente — nunca comitar credenciais (SMTP, Supabase, Gemini)
+.env
+.env.*
+!.env.example
+
+# Sistema
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+npm-debug.log*
+
+# Originais pesados das imagens de portfólio: entram só como WebP otimizado
+assets/portfolio-originais/
+
+# Saída de build: o bundle minificado nunca deve voltar ao repositório
+bundle.js

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Site de pagina unica: as secoes (#sobre, #projetos, #processo, #contato) sao
+  ancoras e nao entram no sitemap. Quando a fase 2 criar paginas proprias por
+  servico, cada uma entra aqui como <url> propria.
+-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://curtatche.com.br/</loc>
+    <lastmod>2026-09-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+</urlset>
