@@ -33,8 +33,8 @@ export default function Cabecalho({ onNavegar }: Props) {
           <img
             src="/portfolio/logosite.webp"
             alt="Curtatchê"
-            width={400}
-            height={223}
+            width={425}
+            height={240}
             className="h-12 sm:h-14 w-auto object-contain transition-transform duration-300 hover:scale-105"
           />
         </button>

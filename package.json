@@ -9,7 +9,8 @@
     "preview": "vite preview",
     "typecheck": "tsc --noEmit",
     "otimiza:imagens": "python scripts/optimize-images.py",
-    "gera:og": "python scripts/gerar-og-image.py"
+    "gera:og": "python scripts/gerar-og-image.py",
+    "otimiza:logo": "python scripts/otimiza-logo.py"
   },
   "dependencies": {
     "lucide-react": "^0.546.0",

@@ -12,7 +12,7 @@ Uso:  python scripts/gerar-og-image.py
 Saida: public/og-image.jpg
 """
 from pathlib import Path
-from PIL import Image, ImageChops, ImageDraw, ImageFilter, ImageFont
+from PIL import Image, ImageDraw, ImageFilter, ImageFont
 
 RAIZ = Path(__file__).resolve().parent.parent
 LOGO = RAIZ / "public" / "portfolio" / "logosite.webp"
@@ -48,18 +48,11 @@ def main() -> None:
 
     d = ImageDraw.Draw(img)
 
-    # Logo. O arquivo tem um fundo escuro chapado, entao em vez de colar o
-    # retangulo em cima usa-se blend "lighten": cada pixel fica o mais claro
-    # entre logo e fundo, o que faz o fundo escuro do arquivo desaparecer e
-    # preserva as letras metalicas. Quando houver logo em SVG ou PNG com
-    # transparencia, trocar por alpha_composite direto.
+    # Logo. O arquivo tem transparencia real, entao entra por alpha_composite.
     with Image.open(LOGO) as logo:
-        logo = logo.convert("RGB")
-        logo.thumbnail((190, 110), Image.LANCZOS)
-        pos = (72, 62)
-        caixa = (*pos, pos[0] + logo.width, pos[1] + logo.height)
-        fundo = img.crop(caixa).convert("RGB")
-        img.paste(ImageChops.lighter(fundo, logo), pos)
+        logo = logo.convert("RGBA")
+        logo.thumbnail((230, 130), Image.LANCZOS)
+        img.alpha_composite(logo, (72, 56))
 
     # Rotulo
     d.text((72, 210), "CRIAÇÃO DE SITES · E-COMMERCE · SISTEMAS",

@@ -20,8 +20,8 @@ export default function Rodape({ onNavegar, onAbrirPrivacidade }: Props) {
             <img
               src="/portfolio/logosite.webp"
               alt="Curtatchê"
-              width={400}
-              height={223}
+              width={425}
+              height={240}
               loading="lazy"
               decoding="async"
               className="h-10 sm:h-12 w-auto object-contain transition-transform duration-300 hover:scale-105"

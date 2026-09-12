@@ -19,12 +19,10 @@ RAIZ = Path(__file__).resolve().parent.parent
 ORIGINAIS = RAIZ / "assets" / "portfolio-originais"
 SAIDA = RAIZ / "public" / "portfolio"
 
-# nome do arquivo -> (largura alvo, qualidade)
-#   *_cel  = mock de celular, exibido com ~420px
-#   demais = mock de desktop, exibido com ~960px (1280 cobre telas retina)
-PERFIS = {
-    "logosite": (400, 85),
-}
+# *_cel  = mock de celular, exibido com ~420px
+# demais = mock de desktop, exibido com ~960px (1280 cobre telas retina)
+# O logo nao entra aqui: tem transparencia e master proprio, ver scripts/otimiza-logo.py
+PERFIS: dict[str, tuple[int, int]] = {}
 LARGURA_DESKTOP, Q_DESKTOP = 1280, 78
 LARGURA_MOBILE, Q_MOBILE = 420, 80
 
