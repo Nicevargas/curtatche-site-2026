@@ -21,3 +21,6 @@ npm-debug.log*
 
 # Originais pesados das imagens de portfólio: entram só como WebP otimizado
 assets/portfolio-originais/
+
+# Saída de build: o bundle minificado nunca deve voltar ao repositório
+bundle.js
