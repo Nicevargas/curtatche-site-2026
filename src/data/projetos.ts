@@ -177,6 +177,24 @@ export const projetos: Projeto[] = [
     tools: ["Google Maps", "WhatsApp", "Blog"],
     mockupType: "laptop",
   },
+  {
+    id: "aquagenda",
+    title: "Aquagenda",
+    subtitle: "Agenda, Cobranças e Site para Professores",
+    category: "SaaS / Plataforma",
+    description:
+      "Sistema de agenda para professores, estúdios e academias: controle de aulas e vagas, cobrança por Pix e lembretes automáticos no WhatsApp antes de cada aula, com site próprio do professor.",
+    imagem: { src: "/portfolio/aquagenda.webp", largura: 1280, altura: 800 },
+    directLink: "https://aquagenda.com.br/",
+    features: [
+      "Agenda com vagas por turma e lista de espera",
+      "Lembrete automático no WhatsApp 8h antes da aula",
+      "Cobrança por Pix e controle de faturamento",
+      "Site próprio do professor com depoimentos e portfólio",
+    ],
+    tools: ["React", "Supabase", "n8n", "Google Calendar"],
+    mockupType: "laptop",
+  },
 ];
 
 export const categorias: Categoria[] = [
