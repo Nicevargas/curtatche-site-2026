@@ -72,8 +72,6 @@ npm run otimiza:imagens
 
 Pendências conhecidas:
 
-- O print mobile do **NalineLotus** não existe — `naline_cel.png` retornava 404 na origem.
-  Enquanto não houver, a moldura de celular mostra o print desktop desse projeto.
 - O logo é um JPEG com fundo escuro chapado, o que deixa um retângulo visível sobre o preto
   do site. O ideal é substituir por **SVG ou PNG com transparência**.
 
