@@ -1,5 +1,5 @@
 export type Categoria =
-  "E-commerce" | "Institucional" | "SaaS / Plataforma" | "Aplicativo Web";
+  "E-commerce" | "Institucional" | "SaaS / Plataforma" | "Aplicativo Web" | "Aplicativo Mobile";
 
 export type TipoMockup = "tablet" | "phone" | "desktop" | "laptop";
 
@@ -140,6 +140,43 @@ export const projetos: Projeto[] = [
     tools: ["React", "Motion/react", "Tailwind CSS", "SEO Meta"],
     mockupType: "phone",
   },
+  {
+    id: "natacao-criativa-treinos",
+    title: "Natação Criativa Treinos",
+    subtitle: "App de Treinos de Natação",
+    category: "Aplicativo Mobile",
+    description:
+      "Aplicativo Android com um treino de natação novo todos os dias, pensado para o nível de cada nadador e com propósito em cada série. Já publicado na Google Play.",
+    imagem: { src: "/portfolio/treinos.webp", largura: 1280, altura: 800 },
+    directLink:
+      "https://play.google.com/store/apps/details?id=com.natacaocriativa.treinos",
+    features: [
+      "Um treino novo por dia, no seu nível",
+      "Treino organizado em aquecimento, desenvolvimento e recuperação",
+      "Funciona na piscina e em águas abertas",
+      "Histórico de treinos realizados e ranking",
+    ],
+    tools: ["Kotlin", "Jetpack Compose", "Supabase"],
+    mockupType: "phone",
+  },
+  {
+    id: "central-da-estetica",
+    title: "Central da Estética",
+    subtitle: "Clínica de Estética no Jardim Paulista",
+    category: "Institucional",
+    description:
+      "Site institucional de uma clínica de estética facial e corporal no Jardim Paulista, com destaque de ofertas, especialidades, blog e agendamento direto pelo WhatsApp.",
+    imagem: { src: "/portfolio/central_foto.webp", largura: 1280, altura: 714 },
+    directLink: "https://centraldaestetica.com.br/",
+    features: [
+      "Destaque de ofertas do mês com cupom",
+      "Especialidades com protocolos de estética facial e corporal",
+      "Blog com dicas de saúde e bem-estar",
+      "Agendamento direto pelo WhatsApp e mapa de localização",
+    ],
+    tools: ["Google Maps", "WhatsApp", "Blog"],
+    mockupType: "laptop",
+  },
 ];
 
 export const categorias: Categoria[] = [
@@ -147,4 +184,5 @@ export const categorias: Categoria[] = [
   "Institucional",
   "SaaS / Plataforma",
   "Aplicativo Web",
+  "Aplicativo Mobile",
 ];
