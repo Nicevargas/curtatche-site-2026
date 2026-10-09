@@ -18,9 +18,8 @@ export interface Projeto {
   /** Print da versão desktop, exibido dentro da moldura de notebook/monitor. */
   imagem: Imagem;
   /**
-   * Print da versão mobile. Opcional: o NalineLotus não tem — o arquivo
-   * naline_cel.png nunca existiu na origem (retornava 404). Quando ausente,
-   * a moldura de celular cai para o print desktop.
+   * Print da versão mobile. Opcional: quando ausente, a moldura de celular
+   * cai para o print desktop.
    */
   imagemMobile?: Imagem;
   directLink: string;
@@ -30,6 +29,61 @@ export interface Projeto {
 }
 
 export const projetos: Projeto[] = [
+  {
+    id: "natacao-criativa-treinos",
+    title: "Natação Criativa Treinos",
+    subtitle: "App de Treinos de Natação",
+    category: "Aplicativo Mobile",
+    description:
+      "Aplicativo Android com um treino de natação novo todos os dias, pensado para o nível de cada nadador e com propósito em cada série. Já publicado na Google Play.",
+    imagem: { src: "/portfolio/treinos.webp", largura: 1280, altura: 800 },
+    directLink:
+      "https://play.google.com/store/apps/details?id=com.natacaocriativa.treinos",
+    features: [
+      "Um treino novo por dia, no seu nível",
+      "Treino organizado em aquecimento, desenvolvimento e recuperação",
+      "Funciona na piscina e em águas abertas",
+      "Histórico de treinos realizados e ranking",
+    ],
+    tools: ["Kotlin", "Jetpack Compose", "Supabase"],
+    mockupType: "phone",
+  },
+  {
+    id: "central-da-estetica",
+    title: "Central da Estética",
+    subtitle: "Clínica de Estética no Jardim Paulista",
+    category: "Institucional",
+    description:
+      "Site institucional de uma clínica de estética facial e corporal no Jardim Paulista, com destaque de ofertas, especialidades, blog e agendamento direto pelo WhatsApp.",
+    imagem: { src: "/portfolio/central_foto.webp", largura: 1280, altura: 714 },
+    directLink: "https://centraldaestetica.com.br/",
+    features: [
+      "Destaque de ofertas do mês com cupom",
+      "Especialidades com protocolos de estética facial e corporal",
+      "Blog com dicas de saúde e bem-estar",
+      "Agendamento direto pelo WhatsApp e mapa de localização",
+    ],
+    tools: ["Google Maps", "WhatsApp", "Blog"],
+    mockupType: "laptop",
+  },
+  {
+    id: "aquagenda",
+    title: "Aquagenda",
+    subtitle: "Agenda, Cobranças e Site para Professores",
+    category: "SaaS / Plataforma",
+    description:
+      "Sistema de agenda para professores, estúdios e academias: controle de aulas e vagas, cobrança por Pix e lembretes automáticos no WhatsApp antes de cada aula, com site próprio do professor.",
+    imagem: { src: "/portfolio/aquagenda.webp", largura: 1280, altura: 800 },
+    directLink: "https://aquagenda.com.br/",
+    features: [
+      "Agenda com vagas por turma e lista de espera",
+      "Lembrete automático no WhatsApp 8h antes da aula",
+      "Cobrança por Pix e controle de faturamento",
+      "Site próprio do professor com depoimentos e portfólio",
+    ],
+    tools: ["React", "Supabase", "n8n", "Google Calendar"],
+    mockupType: "laptop",
+  },
   {
     id: "fecha-bene",
     title: "FechaBene",
@@ -120,79 +174,6 @@ export const projetos: Projeto[] = [
       "Formulário boutique para captação estratégica",
     ],
     tools: ["React", "Tailwind CSS", "Framer Motion", "Video API"],
-    mockupType: "laptop",
-  },
-  {
-    id: "nalini-lotus",
-    title: "NalineLotus",
-    subtitle: "Site Institucional Básico",
-    category: "Institucional",
-    description:
-      "Showcase web essencial focado em velocidade extrema e carregamento leve, apresentando uma estrutura limpa, informativa e perfeitamente equilibrada.",
-    imagem: { src: "/portfolio/naline.webp", largura: 1280, altura: 7440 },
-    directLink: "https://nalinilotus.lovable.app/",
-    features: [
-      "Design minimalista com alta velocidade",
-      "Otimização impecável para buscadores (SEO)",
-      "Seções de contato e conversão bem integradas",
-      "Visualização responsiva excelente em smartphones",
-    ],
-    tools: ["React", "Motion/react", "Tailwind CSS", "SEO Meta"],
-    mockupType: "phone",
-  },
-  {
-    id: "natacao-criativa-treinos",
-    title: "Natação Criativa Treinos",
-    subtitle: "App de Treinos de Natação",
-    category: "Aplicativo Mobile",
-    description:
-      "Aplicativo Android com um treino de natação novo todos os dias, pensado para o nível de cada nadador e com propósito em cada série. Já publicado na Google Play.",
-    imagem: { src: "/portfolio/treinos.webp", largura: 1280, altura: 800 },
-    directLink:
-      "https://play.google.com/store/apps/details?id=com.natacaocriativa.treinos",
-    features: [
-      "Um treino novo por dia, no seu nível",
-      "Treino organizado em aquecimento, desenvolvimento e recuperação",
-      "Funciona na piscina e em águas abertas",
-      "Histórico de treinos realizados e ranking",
-    ],
-    tools: ["Kotlin", "Jetpack Compose", "Supabase"],
-    mockupType: "phone",
-  },
-  {
-    id: "central-da-estetica",
-    title: "Central da Estética",
-    subtitle: "Clínica de Estética no Jardim Paulista",
-    category: "Institucional",
-    description:
-      "Site institucional de uma clínica de estética facial e corporal no Jardim Paulista, com destaque de ofertas, especialidades, blog e agendamento direto pelo WhatsApp.",
-    imagem: { src: "/portfolio/central_foto.webp", largura: 1280, altura: 714 },
-    directLink: "https://centraldaestetica.com.br/",
-    features: [
-      "Destaque de ofertas do mês com cupom",
-      "Especialidades com protocolos de estética facial e corporal",
-      "Blog com dicas de saúde e bem-estar",
-      "Agendamento direto pelo WhatsApp e mapa de localização",
-    ],
-    tools: ["Google Maps", "WhatsApp", "Blog"],
-    mockupType: "laptop",
-  },
-  {
-    id: "aquagenda",
-    title: "Aquagenda",
-    subtitle: "Agenda, Cobranças e Site para Professores",
-    category: "SaaS / Plataforma",
-    description:
-      "Sistema de agenda para professores, estúdios e academias: controle de aulas e vagas, cobrança por Pix e lembretes automáticos no WhatsApp antes de cada aula, com site próprio do professor.",
-    imagem: { src: "/portfolio/aquagenda.webp", largura: 1280, altura: 800 },
-    directLink: "https://aquagenda.com.br/",
-    features: [
-      "Agenda com vagas por turma e lista de espera",
-      "Lembrete automático no WhatsApp 8h antes da aula",
-      "Cobrança por Pix e controle de faturamento",
-      "Site próprio do professor com depoimentos e portfólio",
-    ],
-    tools: ["React", "Supabase", "n8n", "Google Calendar"],
     mockupType: "laptop",
   },
 ];
