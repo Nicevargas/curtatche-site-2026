@@ -74,7 +74,7 @@ export const projetos: Projeto[] = [
     description:
       "Sistema de agenda para professores, estúdios e academias: controle de aulas e vagas, cobrança por Pix e lembretes automáticos no WhatsApp antes de cada aula, com site próprio do professor.",
     imagem: { src: "/portfolio/aquagenda.webp", largura: 1280, altura: 800 },
-    directLink: "https://drive.google.com/file/d/10pGiSk4Ca3VmRX6MMpMN82CELpAQNl2I/view?usp=sharing",
+    directLink: "https://teste.plataformaeducar.net/",
     features: [
       "Agenda com vagas por turma e lista de espera",
       "Lembrete automático no WhatsApp 8h antes da aula",
